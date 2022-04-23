@@ -34,5 +34,5 @@ int main()
     ccc.pri(4,6);
     cout << ccc.x + ccc.y + ccc.z << endl;
     cout << endl;
-    return 0;
+    return (1);
 }
