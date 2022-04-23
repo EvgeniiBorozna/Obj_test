@@ -1,5 +1,6 @@
 #include <iostream>
-#define TEST
+#include <string>
+#define TEST1
 
 using namespace std;
 
@@ -26,15 +27,25 @@ void pri (int a, int b)
 
 int main()
 {
-    //int a;
+    string a;
     cla_ ccc;
-    ccc.x = 1;
-    ccc.y = 2;
-    cin >> ccc.z; // = 3.1;
+m0: cout << "Enter X: ";
+    cin >> a;
+try
+{
+    ccc.x = stoi(a);
+}
+catch(invalid_argument())
+{
+    cout << "Only numbers are allowed! \n";
+    goto m0;
+}
+catch(out_of_range()) { goto m0; }
+    cout << "Enter Y: ", cin >> ccc.y;
+    cout << "Enter Z: ", cin >> ccc.z;
     ccc.pri();
-    ccc.pri(4,6);
+    ccc.pri(ccc.x, ccc.y);
     cout << ccc.x + ccc.y + ccc.z << endl;
     cout << endl;
-    //cin >> a;
     return (0);
 }
