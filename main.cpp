@@ -26,13 +26,15 @@ void pri (int a, int b)
 
 int main()
 {
+    //int a;
     cla_ ccc;
     ccc.x = 1;
     ccc.y = 2;
-    ccc.z = 3.1;
+    cin >> ccc.z; // = 3.1;
     ccc.pri();
     ccc.pri(4,6);
     cout << ccc.x + ccc.y + ccc.z << endl;
     cout << endl;
-    return (1);
+    //cin >> a;
+    return (0);
 }
