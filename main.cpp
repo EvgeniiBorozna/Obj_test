@@ -35,12 +35,11 @@ try
 {
     ccc.x = stoi(a);
 }
-catch(invalid_argument())
+catch(...)
 {
-    cout << "Only numbers are allowed! \n";
+    cerr << "Only numbers are allowed! \n";
     goto m0;
 }
-catch(out_of_range()) { goto m0; }
     cout << "Enter Y: ", cin >> ccc.y;
     cout << "Enter Z: ", cin >> ccc.z;
     ccc.pri();
