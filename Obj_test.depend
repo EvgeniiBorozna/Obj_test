@@ -1,4 +1,5 @@
 # depslib dependency file v1.0
-1650737394 source:/home/user/Dev/Obj_test/main.cpp
+1650741984 source:/home/user/Dev/Obj_test/main.cpp
 	<iostream>
+	<string>
 
